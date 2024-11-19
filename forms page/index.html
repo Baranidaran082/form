@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: Arial, sans-serif;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        word-break: ;
+    }
+
+    .form-container {
+        background-color: #efecec;
+        width: 100%;
+        max-width: 800px;
+        padding: 20px;
+    }
+
+    table {
+        width: 100%;
+    }
+    
+    table td {
+        padding: 10px;
+    }
+    
+
+
+    textarea {
+    resize: none;
+}
+
+
+button {
+    background-color: #26ef55;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #18b603;
+}
+
+
+
+
+</style>
+<body>
+    <div class="form-container">
+        <form>
+            <table>
+                <tr>
+                    <td><label style="width: 100%;padding: 5px;" for="firstName">First Name:</label></td>
+                    <td><input style="width: 100%;padding: 10px;" type="text" id="firstName" placeholder="Enter your first name"></td>
+                </tr>
+                <tr>
+                    <td><label style="width: 100%;padding: 5px;" for="lastName">Last Name:</label></td>
+                    <td><input style="width: 100%;padding: 10px;" type="text" id="lastName" placeholder="Enter your last name"></td>
+                </tr>
+                <tr>
+                    <td><label style="width: 100%;padding: 5px;" for="email">Email:</label></td>
+                    <td><input style="width: 100%;padding: 10px;" type="email" id="email" placeholder="# should contain @"></td>
+                </tr>
+                <tr>
+                    <td><label style="width: 100%;padding: 5px;" for="mobile">Mobile:</label></td>
+                    <td><input style="width: 100%;padding: 10px;" type="tel" id="mobile" placeholder="only 10 digits are allowed"></td>
+                </tr>
+                <tr>
+                    <td><label style="width: 100%;padding: 5px;"for="gender">Gender:</label></td>
+                    <td class="radio-group">
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Male</label>
+
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label style="width: 100%;padding: 5px;" for="dob">Date Of Birth:</label></td>
+                    <td><input style="width: 100%;padding: 10px;"type="date" id="dob"></td>
+                </tr>
+                <tr>
+                    <td><label style="padding: 5px;" for="address">Address:</label></td>
+                    <td><textarea style="width: 100%;" id="address" rows="6"></textarea></td>
+                </tr>
+                <tr>
+                    <td><label style="width: 100%;padding: 5px;" for="city">City:</label></td>
+                    <td><input style="width: 100%;padding: 10px;" type="text" id="city"></td>
+                </tr>
+                <tr>
+                    <td><label style="width: 100%;padding: 5px;" for="areaPin">Area PIN:</label></td>
+                    <td><input style="width: 100%;padding: 10px;" type="text" id="areaPin"></td>
+                </tr>
+                <tr>
+                    <td><label style="width: 100%;padding: 5px;" for="state">State:</label></td>
+                    <td><input style="width: 100%;padding: 10px;" type="text" id="state"></td>
+                </tr>
+                <tr>
+                    <td><label style="width: 100%;padding: 5px;" for="qualification">Qualification:</label></td>
+                    <td>
+                        <select style="width: 100%;padding: 10px;" id="qualification">
+                            <option value="" hidden>Select Qualification</option>
+                            <option value="highschool">High School</option>
+                            <option value="bachelor">Bachelor's Degree</option>
+                            <option value="master">Master's Degree</option>
+                            <option value="phd">Ph.D.</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label style="width: 100%;padding: 5px;" for="specialization">Specialization:</label></td>
+                    <td class="checkbox-group">
+                        <input type="checkbox" id="cs" name="specialization" value="CS">
+                        <label for="cs">Computer Science</label><br>
+
+                        <input type="checkbox" id="it" name="specialization" value="IT">
+                        <label for="it">Information Technology</label><br>
+
+                        <input type="checkbox" id="ca" name="specialization" value="CA">
+                        <label for="ca">Computer Application</label><br>
+
+                        <input type="checkbox" id="ai" name="specialization" value="AI">
+                        <label for="ai">Artificial Intelligence</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label style="width: 100%;padding: 5px;" for="password">Password:</label></td>
+                    <td><input style="width: 100%;padding: 10px;" type="password" id="password"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <button type="submit" class="btn">Register</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
